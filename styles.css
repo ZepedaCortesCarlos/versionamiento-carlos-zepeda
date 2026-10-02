@@ -111,3 +111,24 @@ td {
     background-color: #FFF;
     color: #212529;
 }
+.autor {
+    color: #6C757D;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.counter {
+    background-color: #EEF2FF;
+    color: #4F46E5;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+footer {
+    margin-top: auto;
+    padding: 15px;
+    color: #6C757D;
+    font-size: 13px;
+}

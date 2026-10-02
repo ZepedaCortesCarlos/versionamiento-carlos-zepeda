@@ -28,6 +28,9 @@ function loadProductTable() {
         const tableBody = document.querySelector('#productsTable tbody');
         tableBody.innerHTML = ''; // Clear the table before adding new products
 
+        // Update the product counter
+        document.getElementById('productCounter').textContent = 'Total de productos: ' + products.length;
+
         products.forEach(product => {
             //Create a table row
             const row = document.createElement('tr');
