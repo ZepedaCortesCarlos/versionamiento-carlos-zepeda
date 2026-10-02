@@ -28,6 +28,9 @@ function loadProductTable() {
         const tableBody = document.querySelector('#productsTable tbody');
         tableBody.innerHTML = ''; // Clear the table before adding new products
 
+        // Update the product counter
+        document.getElementById('productCounter').textContent = 'Total de productos: ' + products.length;
+
         products.forEach(product => {
             //Create a table row
             const row = document.createElement('tr');
@@ -98,3 +101,8 @@ function deleteProduct(event) {
 
 //Event listener for the button click
 document.getElementById('addProduct').addEventListener('click', addProduct);
+
+document.getElementById('themeToggle').addEventListener('click', function () {
+    document.body.classList.toggle('dark');
+    this.textContent = document.body.classList.contains('dark') ? 'Modo claro' : 'Modo oscuro';
+});

@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <title>Example Data Table with IndexedDB</title>
 
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Example Product List Web App</h1>
+    <h1>Inventario de Productos</h1>
+<p class="autor">Desarrollado por Carlos Zepeda Cortes (@ZepedaCortesCarlos)</p>
+<button id="themeToggle" class="theme-btn">Modo oscuro</button>
 
     <div class="container">
 
@@ -22,7 +26,7 @@
             <button id="addProduct">Add Product</button>
         </div>
 
-      
+      <div id="productCounter" class="counter">Total de productos: 0</div>
         <table id="productsTable">
             <thead>
                 <tr>
@@ -40,5 +44,8 @@
 
 
     <script src="functions.js"></script>
+    <footer>
+    <p>© 2026 Carlos Zepeda Cortés - Práctica de Control de Versiones</p>
+</footer>
 </body>
 </html>

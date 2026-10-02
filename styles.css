@@ -1,6 +1,6 @@
 body {
-    background: linear-gradient(#8412B0, #000);
-    font-family: 'Consolas', sans-serif;
+    background: linear-gradient(#F8F9FA, #E9ECEF);
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -11,12 +11,12 @@ body {
 }
 
 h1 {
-    color: #FFF;
+    color: #212529;
+    font-family: 'Orbitron', sans-serif;
     text-align: center;
     margin-top: 20px;
     font-size: 2.5em;
     display: inline;
-    text-shadow: 0 0 10px #FC199A, 0 0 20px #FC199A, 0 0 30px #FC199A, 0 0 40px #FF007F, 0 0 50px #FF007F;
 }
 
 .container {
@@ -31,16 +31,17 @@ h1 {
 
 .formContainer {
     text-align: center;
-    background-color: #FF007F;
+    background-color: #FFFFFF;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #DEE2E6;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     width: 20%;
     margin-right: 20px;
 }
 
 label {
-    color: #00FFFF;
+    color: #495057;
     font-size: 14px;
     margin-right: 10px;
 }
@@ -50,14 +51,14 @@ input {
     margin-right: 10px;
     margin-bottom: 15px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #CED4DA;
     width: 100%;
     box-sizing: border-box;
 }
 
 button {
-    background-color: #FFCC00;
-    color: #8412B0;
+    background-color: #4F46E5;
+    color: #FFFFFF;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -67,7 +68,7 @@ button {
 }
 
 button:hover {
-    background-color: #FC199A;
+    background-color: #3730A3;
     color: #fff;
 }
 
@@ -78,23 +79,23 @@ table {
 }
 
 th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #DEE2E6;
     padding: 12px 15px;
     text-align: left;
 }
 
 th {
-    background-color: #FC199A;
+    background-color: #4F46E5;
     color: white;
 }
 
 td {
-    background-color: #00FFFF;
-    color: #8412B0;
+    background-color: #FFFFFF;
+    color: #212529;
 }
 
 .delete-btn {
-    background-color: #f0745e;
+    background-color: #868E96;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -103,11 +104,73 @@ td {
 }
 
 .delete-btn:hover {
-    background-color: #ff0800;
+    background-color: #E03131;
 }
-
 
 #productsTable tbody tr {
     background-color: #FFF;
-    color: #000;
+    color: #212529;
+}
+.autor {
+    color: #6C757D;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.counter {
+    background-color: #EEF2FF;
+    color: #4F46E5;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+footer {
+    margin-top: auto;
+    padding: 15px;
+    color: #6C757D;
+    font-size: 13px;
+}
+.theme-btn {
+    width: auto;
+    margin-top: 15px;
+}
+
+body.dark {
+    background: linear-gradient(#212529, #343A40);
+}
+
+body.dark h1 {
+    color: #F8F9FA;
+}
+
+body.dark .autor,
+body.dark footer {
+    color: #ADB5BD;
+}
+
+body.dark .formContainer {
+    background-color: #2B3035;
+    border-color: #495057;
+}
+
+body.dark label {
+    color: #DEE2E6;
+}
+
+body.dark td,
+body.dark #productsTable tbody tr {
+    background-color: #2B3035;
+    color: #F8F9FA;
+}
+
+body.dark th,
+body.dark td {
+    border-color: #495057;
+}
+
+body.dark .counter {
+    background-color: #343A40;
+    color: #A5B4FC;
 }
